@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// Main Style source file
+// -----------------------------------------------------------------------------
+
+@import 'reset-css/reset.css';
+@import './partials/variables';
+
+*, :before, :after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+body {
+    background: #1E3D71 url('/assets/bg/body.jpg') no-repeat scroll 50% 50%;
+    background-size: cover;
+    font: 1.4rem/1.8rem sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper {
+    width: 100rem;
+    margin: 0 auto;
+    height: 64.8rem;
+    background: transparent url('/assets/bg/layout.svg') no-repeat scroll 50% 50%;
+    padding: 2rem;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+    height: 150px;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+    padding: 2rem;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    height: 3rem;
+    text-align: center;
+
+    a {
+        color: #fff;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+}
