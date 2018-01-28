@@ -5,9 +5,30 @@
 @import 'reset-css/reset.css';
 @import './partials/variables';
 
+@font-face {
+    font-family: 'JoyfulJulianaRegular';
+    src: url('/assets/fonts/joyful_juliana-webfont.eot');
+    src: url('/assets/fonts/joyful_juliana-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/joyful_juliana-webfont.woff') format('woff'),
+         url('/assets/fonts/joyful_juliana-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *, :before, :after {
     box-sizing: border-box;
 }
+a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    &:hover {
+        color: #FEEB0A;
+    }
+}
+
 html {
     font-size: 62.5%;
     height: 100%;
@@ -15,46 +36,107 @@ html {
 body {
     background: #1E3D71 url('/assets/bg/body.jpg') no-repeat scroll 50% 50%;
     background-size: cover;
-    font: 1.4rem/1.8rem sans-serif;
-    height: 100%;
+    font: 1.4rem/1.4 sans-serif;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 3.6rem 0;
 }
 .wrapper {
-    width: 100rem;
+    width: 98rem;
     margin: 0 auto;
     height: 64.8rem;
     background: transparent url('/assets/bg/layout.svg') no-repeat scroll 50% 50%;
-    padding: 2rem;
+    padding: 2.4rem;
+    position: relative;
 }
 
 
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
-    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2.4rem;
 }
+
+.logo {
+    padding: 1.2rem;
+
+    &:hover {
+        animation: 1s infinite ease-in-out tremble;
+    }
+}
+
+
 
 
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
-    padding: 2rem;
+    height: 100%;
+
+    &__section {
+        position: relative;
+        height: 100%;
+        padding: 2rem;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
+.interactImage {
+    display: block;
+}
+.hoverImage {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s linear;
+
+    .interactObject:hover & {
+        opacity: 1;
+    }
+}
+
+.interactObject {
+    cursor: pointer;
+    position: absolute;
+
+    &_tremble {
+        &:hover .interactImage { 
+            animation: .9s infinite ease-in-out tremble;
+        }
+    }
+}
+
+@keyframes tremble {
+	0% { transform: rotate(0deg); }
+	10% { transform: rotate(-2deg); }
+	20% { transform: rotate(2deg); }
+	30% { transform: rotate(0deg); }
+	40% { transform: rotate(2deg); }
+	50% { transform: rotate(-2deg); }
+	60% { transform: rotate(0deg); }
+	70% { transform: rotate(-2deg); }
+	80% { transform: rotate(2deg); }
+	90% { transform: rotate(0deg); }
+	100% { transform: rotate(-2deg); }
+}
 
 
 
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-    height: 3rem;
+    padding: 3rem 0 0;
     text-align: center;
-
-    a {
-        color: #fff;
-        font-size: 1.2rem;
-        text-decoration: none;
-    }
 }

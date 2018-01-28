@@ -1,0 +1,47 @@
+<section class="content__section yard">
+    <div (clickOutside)="welcomeStatus = false" *ngIf="welcomeStatus" class="welcome">
+        <h2 class="welcome__heading">Welcome to Margaret's place!</h2>
+        <h3 class="welcome__subHeading">Come inside for a safe and fun place just for you.</h3>
+
+        <p class="welcome__msg">Click the cutout objects for information, activities and surprises.</p>
+    </div>
+
+    <div class="interactObject interactObject_tremble mailbox">
+        <img class="interactImage" src="assets/images/yard/mailbox.png" alt="mailbox">
+        <img class="hoverImage mailbox__hoverImage" src="assets/images/yard/mailbox_hover.png" alt="mailbox hint">
+    </div>
+    <div class="postcard">
+        <img class="interactImage" src="assets/images/yard/postcard.png" alt="Postcard">
+    </div>
+
+    <div class="interactObject interactObject_tremble bike" (click)="playSound(sounds.bike)">
+        <img class="interactImage" src="assets/images/yard/bike.png" alt="Bike">
+        <img class="hoverImage bike__hoverImage" src="assets/images/yard/bike-hover.png" alt="Bike hint">
+    </div>
+
+    <!-- <div (clickOutside)="onClickedOutside($event)" style="padding: 30rem; color:aliceblue; font-size: 3rem;">Click outside this</div> -->
+
+<!--
+    <div class="dog">
+        <img id="dog1" src="img/exterior/dog-n.png" alt="mailbox">
+    </div>
+    <div class="dog-hover">
+        <img src="img/exterior/dog-hover.png">
+    </div>
+
+    <div class="knock">
+        <img id="knock_img" src="img/exterior/knock.png" alt="mailbox">
+    </div>
+    <div class="knock-hover" style="display: none;">
+        <img src="img/exterior/knock-hover.png">
+    </div>
+
+    <div class="postcart" id="popup-window" style="display: none;">
+        <a class="close-postcart" id="close">X</a>
+        <img src="img/postcart.png" alt="postcart">
+    </div>
+
+    <div class="welcome-messege" style="width: 2778px;">
+        <img src="img/welcome-messege.png" alt="welcome">
+    </div> -->
+</section>

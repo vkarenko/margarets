@@ -1,0 +1,46 @@
+.nav {
+    text-align: center;
+    padding: 0 1.2rem;
+    width: 23.2rem;
+
+    &__head {
+        cursor: pointer;
+        background: #fff;
+        clip-path: polygon(100% 0, 98% 72%, 43% 100%, 2% 73%, 0 0);
+        padding: 1rem .9rem 1.2rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+    }
+    &__headText {
+        padding: .4rem 1rem 1.2rem;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.2rem;
+        clip-path: polygon(100% 2%, 97% 70%, 40% 99%, 3% 71%, 0 0);
+    }
+
+    &__box {
+        // display: none;
+        margin: -1.8rem 0 0;
+        background: #fff;
+        padding: 1.8rem 3rem 3.2rem;
+        clip-path: polygon(100% 0, 96% 79%, 48% 100%, 7% 82%, 0 0);
+    }
+    &__item {
+        display: inline-block;
+        padding: .2rem 2.2rem;
+        font-family: 'JoyfulJulianaRegular';
+        font-size: 2.8rem;
+        line-height: 3rem;
+        color: #000;
+        clip-path: polygon(39% 0, 91% 6%, 100% 100%, 0 96%, 9% 10%);
+
+        &:hover {
+            color: #000;
+            background: #FEEB0A;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.yard {
+    background-image: url('/assets/bg/outdoor.jpg');
+}
+
+.welcome {
+    position: absolute;
+    right: 0;
+    bottom: 22.8rem;
+    background: #fff;
+    padding: 3rem 3.6rem;
+    clip-path: polygon(0 0, 100% 14%, 100% 98%, 0% 100%);
+    text-align: center;
+
+    &__heading {
+        font-family: 'JoyfulJulianaRegular';
+        font-size: 3.2rem;
+    }
+
+    &__subHeading {
+        font-size: 1.6rem;
+        color: #4B8DC9;
+        margin: 0 0 1.2rem;
+    }
+
+    &__msg {
+        font-size: 1.2rem;
+    }
+}
+
+.mailbox {
+    right: 22.6rem;
+    bottom: 5.4rem;
+
+    &__hoverImage {
+        top: 1.9rem;
+        right: -19rem;
+    }
+}
+
+.bike {
+    bottom: 8.8rem;
+    left: 2rem;
+
+    &__hoverImage {
+        top: -10.2rem;
+        right: -2.8rem;
+    }
+}

@@ -1,25 +1,17 @@
 <div class="wrapper">
-	<header class="header">
-    <a href="/" class="logo">
+  <header class="header">
+    <a routerLink="" class="logo">
       <img src="assets/logo.png" />
-
-      <nav class="navigation">
-        <div class="navigation__box">
-          <a href="/" class="navigation__item">Front Yard</a>
-          <a href="/all" class="navigation__item">All Rooms</a>
-          <a href="/kitchen" class="navigation__item">Kitchen</a>
-          <a href="/tv" class="navigation__item">Tv room</a>
-          <a href="/library" class="navigation__item">Library</a>
-        </div>
-      </nav>
     </a>
-  </header><!-- .header-->
+
+    <app-nav-menu></app-nav-menu>
+  </header>
 
 	<main class="content">
-
-	</main><!-- .content -->
-</div><!-- .wrapper -->
+    <router-outlet></router-outlet>
+	</main>
+</div>
 
 <footer class="footer">
   <a href="#">Joe Torre Safe At Home® Foundation</a>
-</footer><!-- .footer -->
+</footer>
