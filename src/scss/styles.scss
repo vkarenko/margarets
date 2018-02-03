@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 // Main Style source file
 // -----------------------------------------------------------------------------
-
-@import 'reset-css/reset.css';
 @import './partials/variables';
 
 @font-face {
@@ -47,9 +45,10 @@ body {
     width: 98rem;
     margin: 0 auto;
     height: 64.8rem;
-    background: transparent url('/assets/bg/layout.svg') no-repeat scroll 50% 50%;
+    background: #fff;
     padding: 2.4rem;
     position: relative;
+    clip-path: polygon(.3% 100%, 0% 88%, .8% 28%, 0 .9%, 38% 1.2%, 99.3% 0, 100% 13%, 99.1% 66%, 100% 98.8%, 67% 98%, 30% 99.2%);
 }
 
 
@@ -61,7 +60,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     position: absolute;
-    z-index: 1;
     width: 100%;
     top: 0;
     left: 0;
@@ -70,6 +68,9 @@ body {
 
 .logo {
     padding: 1.2rem;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(.2rem .2rem .3rem #000);
 
     &:hover {
         animation: 1s infinite ease-in-out tremble;

@@ -6,12 +6,14 @@
         <p class="welcome__msg">Click the cutout objects for information, activities and surprises.</p>
     </div>
 
-    <div class="interactObject interactObject_tremble mailbox">
+    <div class="interactObject interactObject_tremble mailbox" (click)="openMailbox()">
         <img class="interactImage" src="assets/images/yard/mailbox.png" alt="mailbox">
         <img class="hoverImage mailbox__hoverImage" src="assets/images/yard/mailbox_hover.png" alt="mailbox hint">
     </div>
-    <div class="postcard">
+    <div class="postcard" *ngIf="showPostcard">
         <img class="interactImage" src="assets/images/yard/postcard.png" alt="Postcard">
+
+        <span class="postcard__close" (click)="showPostcard = false">Close</span>
     </div>
 
     <div class="interactObject interactObject_tremble bike" (click)="playSound(sounds.bike)">

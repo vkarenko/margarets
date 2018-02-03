@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 
 export class YardComponent implements OnInit {
   sounds = {
-     bike: 'assets/sounds/bike.mp3'
+     bike: 'assets/sounds/bike.mp3',
+     postbox: 'assets/sounds/mailbox.mp3'
   };
 
   welcomeStatus = true;
+  showPostcard = false;
 
   constructor() { }
 
@@ -23,7 +25,8 @@ export class YardComponent implements OnInit {
     audio.play();
   }
 
-  onClickedOutside(): void {
-    console.log('click outside');
+  openMailbox(): void {
+    this.playSound(this.sounds.postbox);
+    this.showPostcard = true;
   }
 }

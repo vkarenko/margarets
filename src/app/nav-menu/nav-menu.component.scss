@@ -1,7 +1,17 @@
+.animation-test {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding: 2rem;
+}
 .nav {
     text-align: center;
-    padding: 0 1.2rem;
-    width: 23.2rem;
+    margin: 1.2rem;
+    width: 21.8rem;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    filter: drop-shadow(.2rem .2rem .3rem #000);
 
     &__head {
         cursor: pointer;
@@ -14,6 +24,7 @@
     }
     &__headText {
         padding: .4rem 1rem 1.2rem;
+        margin: 0;
         background: #000;
         color: #fff;
         text-transform: uppercase;
@@ -23,7 +34,6 @@
     }
 
     &__box {
-        // display: none;
         margin: -1.8rem 0 0;
         background: #fff;
         padding: 1.8rem 3rem 3.2rem;
@@ -36,9 +46,10 @@
         font-size: 2.8rem;
         line-height: 3rem;
         color: #000;
+        text-transform: capitalize;
         clip-path: polygon(39% 0, 91% 6%, 100% 100%, 0 96%, 9% 10%);
 
-        &:hover {
+        &:hover, &_active {
             color: #000;
             background: #FEEB0A;
         }

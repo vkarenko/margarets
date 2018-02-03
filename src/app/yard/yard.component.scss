@@ -36,6 +36,24 @@
         right: -19rem;
     }
 }
+.postcard {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -23rem 0 0 -34rem;
+
+    &__close {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 2rem;
+        right: 3.8rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        overflow: hidden;
+        text-indent: -1000rem;
+    }
+}
 
 .bike {
     bottom: 8.8rem;
