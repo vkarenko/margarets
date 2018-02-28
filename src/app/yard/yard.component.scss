@@ -4,16 +4,21 @@
 
 .welcome {
     position: absolute;
-    right: 0;
+    right: -.2rem;
     bottom: 22.8rem;
-    background: #fff;
-    padding: 3rem 3.6rem;
-    clip-path: polygon(0 0, 100% 14%, 100% 98%, 0% 100%);
-    text-align: center;
+    filter: drop-shadow(.2rem .2rem .3rem #000);
+
+    &__wrap {
+        text-align: center;
+        background: #fff;
+        padding: 3rem 3.6rem;
+        clip-path: polygon(0 0, 100% 14%, 100% 98%, 0% 100%);
+    }
 
     &__heading {
         font-family: 'JoyfulJulianaRegular';
         font-size: 3.2rem;
+        margin: 0 0 1.2rem;
     }
 
     &__subHeading {
@@ -24,6 +29,7 @@
 
     &__msg {
         font-size: 1.2rem;
+        margin: 0;
     }
 }
 
@@ -62,5 +68,15 @@
     &__hoverImage {
         top: -10.2rem;
         right: -2.8rem;
+    }
+}
+
+.dog {
+    bottom: 6.2rem;
+    left: 49.2rem;
+
+    &__hoverImage {
+        top: 3.8rem;
+        right: 9rem;
     }
 }

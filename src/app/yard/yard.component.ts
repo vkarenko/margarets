@@ -12,6 +12,8 @@ export class YardComponent implements OnInit {
      postbox: 'assets/sounds/mailbox.mp3'
   };
 
+  postBoxHover: false;
+
   welcomeStatus = true;
   showPostcard = false;
 
